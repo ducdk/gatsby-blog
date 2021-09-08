@@ -25,5 +25,37 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-theme-hello-friend-ng",
+      options: {
+        contentPath: "content",
+        blog: {
+          create: true,
+          path: "posts",
+          title: "Posts",
+          description: "Demo page blog"
+        },
+        mode: {
+          default: "dark",
+          allowChange: true,
+        },
+        menuLinks: [
+          {
+            name: "Posts",
+            link: "/posts",
+          },
+          {
+            name: "Works",
+            link: "/works",
+          },
+        ],
+      },
+    },
   ],
+  siteMetadata: {
+    title: "Hello Friend NG",
+    titleTemplate: "%s – Demo Page",
+    url: "https://filipkrw.github.io/gatsby-theme-hello-friend-ng",
+    description: "Demo page for Hello Friend NG theme for Gatsby",
+  },
 };
